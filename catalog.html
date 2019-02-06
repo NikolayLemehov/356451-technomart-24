@@ -17,8 +17,8 @@
   <div class="main-header-middle">
     <div class="container">
       <h1>Интернет-магазин
-      строительных материалов
-      и инструментов для ремонта</h1>
+        строительных материалов
+        и инструментов для ремонта</h1>
       <address class="contacts">
         <p>+7 (812) 555-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -53,7 +53,7 @@
 
 <main class="container">
   <h1>перфораторы</h1>
-  <ul>
+  <ul class="breadcrumbs">
     <li><a href="#">каталог</a>
       <ul>
         <li><a href="#">инструмент</a>
@@ -64,65 +64,64 @@
       </ul>
     </li>
   </ul>
-  <section class="filter-items">
-    <div class="top-left-position">фильтр:</div>
-    <div class="top-filter"></div>
-    <div class="side-filter">
-
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>цена:</legend>
-        </fieldset>
-        <fieldset>
-          <legend>производители:</legend>
-          <ul>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch"
-                     id="filter-bosh" checked>
-              <label for="filter-bosh">bosch</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
-                     id="filter-interskol" checked>
-              <label for="filter-interskol">интерскол</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
-                     id="filter-makita" checked>
-              <label for="filter-makita">makita</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
-                     id="filter-dewalt" checked>
-              <label for="filter-dewalt">dewalt</label>
-            </li>
-            <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
-                     id="filter-hitachi" checked>
-              <label for="filter-hitachi">hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>питание:</legend>
-          <ul>
-            <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                     value="rechargeable" id="filter-rechargeable" checked>
-              <label for="filter-rechargeable">аккумуляторные</label>
-            </li>
-            <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                     value="networked" id="filter-networked">
-              <label for="filter-networked">сетевые</label>
-            </li>
-          </ul>
-        </fieldset>
-      </form>
-      <button>показать</button>
-    </div>
-    <ul class="elements-filter-result">
-      <li>
+  <section class="filters">
+    <h2>фильтр:</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>цена:</legend>
+      </fieldset>
+      <fieldset>
+        <legend>производители:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch"
+                   id="filter-bosh" checked>
+            <label for="filter-bosh">bosch</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
+                   id="filter-interskol" checked>
+            <label for="filter-interskol">интерскол</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
+                   id="filter-makita" checked>
+            <label for="filter-makita">makita</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
+                   id="filter-dewalt" checked>
+            <label for="filter-dewalt">dewalt</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
+                   id="filter-hitachi" checked>
+            <label for="filter-hitachi">hitachi</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>питание:</legend>
+        <ul>
+          <li>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                   value="rechargeable" id="filter-rechargeable" checked>
+            <label for="filter-rechargeable">аккумуляторные</label>
+          </li>
+          <li>
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                   value="networked" id="filter-networked">
+            <label for="filter-networked">сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <button>показать</button>
+  </section>
+  <section class="catalog">
+    <h2 class="visually-hidden">список товаров</h2>
+    <ul class="catalog-list">
+      <li class="catalog-item">
         <h3>Перфоратор BOSCH BFG 3000</h3>
         <img src="img/Perforator_2000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
         <ul>
@@ -216,6 +215,16 @@
       </li>
 
     </ul>
+    <ul class="pagination-list">
+      <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+      <li class="pagination-item"><a href="#">2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+    </ul>
+    <button class="btn pagination-item" value="следующая"></button>
+  </section>
+  <section class="filter-items">
+    <h2>сортировка:</h2>
+    <div class="top-filter"></div>
   </section>
 </main>
 
