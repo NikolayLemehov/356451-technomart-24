@@ -71,9 +71,19 @@ a {
   width: 17px;
   height: 17px;
 
+  vertical-align: middle;
+
   background: url("../img/icon-search.svg") 0 0 no-repeat;
   background-size: 17px 17px;
-  vertical-align: middle;
+  opacity: 0.3;
+}
+
+.search-form__icon:hover {
+  opacity: 1;
+}
+
+.search-form__icon:active {
+  opacity: 0.5;
 }
 
 .search-form__field:focus ~ .search-form__label .search-form__icon {
