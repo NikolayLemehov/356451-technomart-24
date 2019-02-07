@@ -88,6 +88,7 @@ a {
 
 .search-form__field:focus ~ .search-form__label .search-form__icon {
   background-image: url("../img/icon-search-focus.svg");
+  opacity: 1;
 }
 
 
