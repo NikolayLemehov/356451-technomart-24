@@ -49,6 +49,14 @@ a {
   overflow: hidden;
 }
 
+.main-header__logo:hover {
+  background-color: #ca2c37;
+}
+
+.main-header__logo:active {
+  background-color: #ba2732;
+}
+
 .main-header__logo img {
   display: block;
   margin: 13px auto;
