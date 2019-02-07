@@ -11,9 +11,15 @@
 <body>
 
 <header class="main-header" id="header">
-  <div class="main-header-top">
+  <div class="main-header__top">
     <div class="container">
-      <a class="main-header-logo" href="#header">техномарт</a>
+      <a class="main-header__logo" href="#header"><img src="img/logo-technomart.svg" alt="лого техномарт" width="110" height="18"></a>
+      <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+        <label for="search-field">
+          <img src="img/icon-search.svg" alt="поле поиска" width="17" height="17">
+        </label>
+        <input class="search-form__field" type="search" name="search" id="search-field" placeholder="Поиск:">
+      </form>
       <p>Поиск:</p>
       <p>Закладки: 0</p>
       <p>Корзина: 0</p>
@@ -29,11 +35,11 @@
         <p>+7 (812) 555-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
-      <ul>
+      <ul class="list">
         <li><a class="btn" href="#">Войти</a></li>
         <li><a class="btn" href="#">Регистрация</a></li>
       </ul>
-      <div hidden>
+      <div class="hidden">
         <p>Равшан Джамшутович</p>
         <ul>
           <li><a href="#">Мои заказы</a></li>
@@ -44,14 +50,14 @@
   </div>
   <nav class="main-navigation">
     <div class="container">
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="main-navigation__list list">
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Главная</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Компания</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Новости</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Спецпредложения</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Доставка</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Контакты</a></li>
       </ul>
     </div>
   </nav>
