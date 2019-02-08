@@ -16,6 +16,8 @@ a {
 }
 
 .list {
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -41,6 +43,7 @@ a {
   background-color: #293449;
 }
 
+/*main-header main-header-top main-header__logo*/
 .main-header__logo {
   display: block;
   width: 220px;
@@ -64,6 +67,7 @@ a {
   margin: 13px auto;
 }
 
+/*main-header main-header-top search-form*/
 .search-form__label {
   float: left;
 }
