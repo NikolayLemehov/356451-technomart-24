@@ -4,8 +4,8 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: 24px;
   font-weight: 400;
+  line-height: 24px;
   color: #000;
 
   background-color: #ffffff;
@@ -16,8 +16,8 @@ a {
 }
 
 .list {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 
 .hidden {
@@ -29,12 +29,14 @@ a {
   margin: 0 auto;
 }
 
+/*main-header*/
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
 
   background: #f4f7f9;
 }
 
+/*main-header main-header-top*/
 .main-header__top {
   background-color: #293449;
 }
@@ -91,7 +93,87 @@ a {
   opacity: 1;
 }
 
+/*main-header main-header__top widget*/
+.widget__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
 
+.widget__link:hover {
+  background-color: #212a3a;
+}
+
+.widget__link:active {
+  background-color: #161d29;
+}
+
+.widget__link-bookmark {
+  padding-left: 45px;
+}
+
+.widget__link-cart {
+  padding-left: 50px;
+}
+
+.widget__info {
+  position: relative;
+
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.widget__link:active .widget__info {
+  opacity: 0.6;
+}
+
+.widget__info::before {
+  position: absolute;
+  top: 0;
+
+  display: block;
+
+  opacity: 0.3;
+  content: '';
+}
+
+.widget__link:hover .widget__info::before {
+  opacity: 1;
+}
+
+.widget__link:active .widget__info::before {
+  opacity: 0.5;
+}
+
+.widget__info-bookmark::before {
+  left: -13px;
+
+  width: 14px;
+  height: 16px;
+
+  background: url("../img/icon-bookmark.svg") no-repeat 0 0;
+  background-size: 14px 16px;
+
+  transform: translateX(-100%);
+}
+
+.widget__info-cart::before {
+  left: -17px;
+
+  width: 15px;
+  height: 15px;
+
+  background: url("../img/icon-cart.svg") no-repeat 0 0;
+  background-size: 15px 15px;
+
+  transform: translateX(-100%);
+}
+
+/*main-header main-navigation*/
 .main-navigation__list {
   background-color: #32425c;
 }
