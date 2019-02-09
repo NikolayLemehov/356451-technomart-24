@@ -99,13 +99,16 @@ a {
 .search-form__field::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #ffffff;
 }
+
 .search-form__field::-moz-placeholder { /* Firefox 19+ */
   color: #ffffff;
   opacity: 1;
 }
+
 .search-form__field:-ms-input-placeholder { /* IE 10+ */
   color: #ffffff;
 }
+
 .search-form__field:-moz-placeholder { /* Firefox 18- */
   color: #ffffff;
   opacity: 1;
@@ -270,19 +273,21 @@ a {
 
   display: block;
   padding: 14px 20px 14px 75px;
-  border: 3px solid #ffffff;
+
   font-size: 21px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
   color: #ee3643;
+
+  border: 3px solid #ffffff;
 }
 
 .header-contacts__phone::before {
   position: absolute;
   top: 50%;
   left: 15px;
-  content: '';
+
   display: block;
   width: 19px;
   height: 19px;
@@ -290,6 +295,7 @@ a {
   background: url("../img/icon-phone.svg") no-repeat 0 0;
   background-size: 19px 19px;
 
+  content: '';
   transform: translateY(-50%);
 }
 
@@ -299,6 +305,67 @@ a {
   font-weight: 400;
   line-height: 24px;
   color: #32425c;
+}
+
+/*main-header user-navigation*/
+.user-navigation-out {
+}
+
+.user-navigation-out__item {
+
+}
+
+.user-navigation-out__link {
+  display: block;
+
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation-out__link:hover {
+  color: #ee3643;
+}
+
+.user-navigation-out__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation-out__link-login {
+  position: relative;
+  padding: 15px 20px 15px 50px;
+}
+
+.user-navigation-out__link-login::before {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+
+  display: block;
+  width: 20px;
+  height: 17px;
+
+  background: url("../img/icon-login.svg") no-repeat 0 0;
+  background-size: 20px 17px;
+
+  transform: translateY(-50%);
+
+  content: '';
+}
+
+.user-navigation-out__item:hover .user-navigation-out__link-login::before {
+  background-image: url("../img/icon-login-hover.svg");
+}
+
+.user-navigation-out__item:active .user-navigation-out__link-login::before {
+  background-image: url("../img/icon-login.svg");
+}
+
+.user-navigation-out__link-registration {
+  padding: 15px 25px 15px 25px;
 }
 
 /*main-header main-navigation*/
