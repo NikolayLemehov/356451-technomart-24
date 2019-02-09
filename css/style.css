@@ -1,3 +1,11 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -230,10 +238,10 @@ a {
   display: block;
   padding: 14px 20px;
 
-  color: #ffffff;
   font-size: 17px;
   font-weight: 400;
   line-height: 18px;
+  color: #ffffff;
 
   background-color: #63a63e;
 }
@@ -247,11 +255,51 @@ a {
   opacity: 0.5;
 }
 
-/*
-.to-process-order:active .to-process-order__content{
-  opacity: 0.5;
+/*main-header main-header__middle*/
+/*main-header main-header__middle main-header__title*/
+.main-header__title {
+  color: #ee3643;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
 }
-*/
+
+/*main-header main-header__middle header-contacts*/
+.header-contacts__phone {
+  position: relative;
+
+  display: block;
+  padding: 14px 20px 14px 75px;
+  border: 3px solid #ffffff;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-contacts__phone::before {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  content: '';
+  display: block;
+  width: 19px;
+  height: 19px;
+
+  background: url("../img/icon-phone.svg") no-repeat 0 0;
+  background-size: 19px 19px;
+
+  transform: translateY(-50%);
+}
+
+.header-contacts__address {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #32425c;
+}
 
 /*main-header main-navigation*/
 .main-navigation__list {
@@ -262,10 +310,10 @@ a {
   display: block;
   padding: 20px 30px;
 
-  color: #ffffff;
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
+  color: #ffffff;
 }
 
 .main-navigation__link:hover {
