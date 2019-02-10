@@ -308,13 +308,7 @@ a {
 }
 
 /*main-header user-navigation*/
-.user-navigation-out {
-}
-
-.user-navigation-out__item {
-
-}
-
+/*main-header user-navigation user-navigation-out*/
 .user-navigation-out__link {
   display: block;
 
@@ -366,6 +360,91 @@ a {
 
 .user-navigation-out__link-registration {
   padding: 15px 25px 15px 25px;
+}
+
+/*main-header user-navigation user-navigation-inside*/
+.user-navigation-inside__link-name {
+  position: relative;
+
+  display: block;
+  padding: 14px 20px 11px 47px;
+
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.user-navigation-inside__link-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation-inside__link-name::before {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+
+  display: block;
+  width: 20px;
+  height: 18px;
+
+  background: url("../img/icon-user.svg") 0 0 no-repeat;
+  background-size: 20px 18px;
+
+  transform: translateY(-50%);
+
+  content: '';
+}
+
+.user-navigation-inside__item:hover .user-navigation-inside__link-name::before {
+  background-image: url("../img/icon-user-hover.svg");
+}
+
+.user-navigation-inside__item:active .user-navigation-inside__link-name::before {
+  background-image: url("../img/icon-user.svg");
+}
+
+.user-navigation-inside__link-name::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+
+  display: block;
+  width: 21px;
+  height: 17px;
+
+  background: url("../img/icon-logout.svg") 0 0 no-repeat;
+  background-size: 21px 17px;
+
+  transform: translateY(-50%);
+
+  content: '';
+}
+
+.user-navigation-inside__item:hover .user-navigation-inside__link-name::after {
+  background-image: url("../img/icon-logout-hover.svg");
+}
+
+.user-navigation-inside__item:active .user-navigation-inside__link-name::after {
+  background-image: url("../img/icon-logout.svg");
+}
+
+.user-navigation-inside__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.user-navigation-inside__link:hover {
+  color: #ee3643;
+}
+
+.user-navigation-inside__link:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 /*main-header main-navigation*/

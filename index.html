@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic"
+        rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -13,7 +14,8 @@
 <header class="main-header" id="header">
   <div class="main-header__top">
     <div class="container">
-      <a class="main-header__logo" href="#header"><img src="img/logo-technomart.svg" alt="лого техномарт" width="110" height="18"></a>
+      <a class="main-header__logo" href="#header"><img src="img/logo-technomart.svg" alt="лого техномарт" width="110"
+                                                       height="18"></a>
       <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
         <input class="search-form__field" type="search" name="search" id="search-field" placeholder="Поиск:">
         <label class="search-form__label" for="search-field" aria-label="Поиск"></label>
@@ -42,19 +44,30 @@
         <a class="header-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
-      <ul class="list user-navigation user-navigation-out">
-        <li class="user-navigation-out__item">
-          <a class="btn user-navigation-out__link user-navigation-out__link-login" href="#">Войти</a>
-        </li>
-        <li class="user-navigation-out__item">
-          <a class="btn user-navigation-out__link user-navigation-out__link-registration" href="#">Регистрация</a>
-        </li>
-      </ul>
-      <div class="hidden user-navigation user-navigation-inside">
-        <p>Равшан Джамшутович</p>
-        <ul>
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">Личный кабинет</a></li>
+
+      <div class="user-navigation-out">
+        <ul class="list user-navigation-out__list">
+          <li class="user-navigation-out__item">
+            <a class="btn user-navigation-out__link user-navigation-out__link-login" href="#">Войти</a>
+          </li>
+          <li class="user-navigation-out__item">
+            <a class="btn user-navigation-out__link user-navigation-out__link-registration" href="#">Регистрация</a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-navigation-inside">
+        <ul class="list user-navigation-inside__list">
+          <li class="user-navigation-inside__item">
+            <a class="btn user-navigation-inside__link-name" href="#">Равшан Джамшутович</a>
+          </li>
+        </ul>
+        <ul class="list user-navigation-inside__list">
+          <li class="user-navigation-inside__item">
+            <a class="user-navigation-inside__link" href="#">Мои заказы</a>
+          </li>
+          <li class="user-navigation-inside__item">
+            <a class="user-navigation-inside__link" href="#">Личный кабинет</a>
+          </li>
         </ul>
       </div>
     </div>
