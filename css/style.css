@@ -212,7 +212,7 @@ a {
   opacity: 0.5;
 }
 
-.widget__info-bookmark::before {
+.widget__info_bookmark::before {
   left: -13px;
 
   width: 14px;
