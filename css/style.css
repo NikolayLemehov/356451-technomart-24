@@ -224,7 +224,7 @@ a {
   transform: translateX(-100%);
 }
 
-.widget__info-cart::before {
+.widget__info_cart::before {
   left: -17px;
 
   width: 15px;
