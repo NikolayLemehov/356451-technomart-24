@@ -268,7 +268,7 @@ a {
 }
 
 /*header header__middle header-contacts*/
-.header-contacts__phone {
+.header-contacts__link_phone {
   position: relative;
 
   display: block;
@@ -283,7 +283,7 @@ a {
   border: 3px solid #ffffff;
 }
 
-.header-contacts__phone::before {
+.header-contacts__link_phone::before {
   position: absolute;
   top: 50%;
   left: 15px;
