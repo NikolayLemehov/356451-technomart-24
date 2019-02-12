@@ -39,20 +39,20 @@ a {
   margin: 0 auto;
 }
 
-/*main-header*/
-.main-header {
+/*header*/
+.header {
   font-family: "Cuprum", Arial, sans-serif;
 
   background: #f4f7f9;
 }
 
-/*main-header main-header-top*/
-.main-header__top {
+/*header header-top*/
+.header__top {
   background-color: #293449;
 }
 
-/*main-header main-header-top main-header__logo*/
-.main-header__logo {
+/*header header-top header__logo*/
+.header__logo {
   display: block;
   width: 220px;
   height: 47px;
@@ -62,20 +62,20 @@ a {
   overflow: hidden;
 }
 
-.main-header__logo:hover {
+.header__logo:hover {
   background-color: #ca2c37;
 }
 
-.main-header__logo:active {
+.header__logo:active {
   background-color: #ba2732;
 }
 
-.main-header__logo img {
+.header__logo img {
   display: block;
   margin: 13px auto;
 }
 
-/*main-header main-header-top search-form*/
+/*header header-top search-form*/
 .search-form {
   position: relative;
 }
@@ -156,7 +156,7 @@ a {
   opacity: 1;
 }
 
-/*main-header main-header__top widget*/
+/*header header__top widget*/
 .widget__link {
   display: block;
   padding-top: 15px;
@@ -236,7 +236,7 @@ a {
   transform: translateX(-100%);
 }
 
-/*main-header main-header-top to-process-order*/
+/*header header-top to-process-order*/
 .to-process-order {
   display: block;
   padding: 14px 20px;
@@ -258,16 +258,16 @@ a {
   opacity: 0.5;
 }
 
-/*main-header main-header__middle*/
-/*main-header main-header__middle main-header__title*/
-.main-header__title {
+/*header header__middle*/
+/*header header__middle header__title*/
+.header__title {
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
 }
 
-/*main-header main-header__middle header-contacts*/
+/*header header__middle header-contacts*/
 .header-contacts__phone {
   position: relative;
 
@@ -307,8 +307,8 @@ a {
   color: #32425c;
 }
 
-/*main-header user-navigation*/
-/*main-header user-navigation user-navigation-out*/
+/*header user-navigation*/
+/*header user-navigation user-navigation-out*/
 .user-navigation-out__link {
   display: block;
 
@@ -362,7 +362,7 @@ a {
   padding: 15px 25px 15px 25px;
 }
 
-/*main-header user-navigation user-navigation-inside*/
+/*header user-navigation user-navigation-inside*/
 .user-navigation-inside__link-name {
   position: relative;
 
@@ -447,7 +447,7 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
-/*main-header main-navigation*/
+/*header main-navigation*/
 .main-navigation__list {
   background-color: #32425c;
 }
@@ -623,6 +623,10 @@ a {
   border-radius: 2px;
 }
 
+.promo-slider {
+  width: 620px;
+  height: 266px;
+}
 
 /*main-footer*/
 .main-footer {
