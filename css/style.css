@@ -501,7 +501,7 @@ a {
   background-color: #ffc047;
 }
 
-.new-item-promo::before {
+.promo-item-new::before {
   position: absolute;
   top: 0;
   right: 0;
