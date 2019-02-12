@@ -638,7 +638,7 @@ a {
   background-color: #32425c;
 }
 
-.footer__logo {
+.footer__logo-link {
   display: block;
   width: 220px;
   height: 68px;
@@ -648,15 +648,15 @@ a {
   overflow: hidden;
 }
 
-.footer__logo:hover {
+.footer__logo-link:hover {
   background-color: #ca2c37;
 }
 
-.footer__logo:active {
+.footer__logo-link:active {
   background-color: #ba2732;
 }
 
-.footer__logo img {
+.footer__logo-link img {
   display: block;
   margin: 20px auto;
 }
