@@ -668,6 +668,7 @@ a {
 
   width: 220px;
   /*height: 318px;*/
+  margin-bottom: 30px;
 
   border: 1px solid rgba(229, 229, 229, 1);
 }
@@ -676,6 +677,13 @@ a {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
   border-color: rgba(229, 229, 229, 0);
 }
+
+.popular__item_brand:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  border-color: rgba(229, 229, 229, 0);
+  opacity: 0.3;
+}
+
 
 .popular__h3 {
   font-size: 18px;
@@ -756,6 +764,19 @@ a {
   color: rgba(255, 255, 255, 1);
 
   background: url("../img/red-button.svg") 0 0 no-repeat;
+}
+
+.popular__brand-link {
+  display: block;
+  width: 100%;
+  height: 145px;
+}
+
+.popular__brand-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
 }
 
 /*catalog*/
