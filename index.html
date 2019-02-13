@@ -130,7 +130,8 @@
       <ul class="list popular__list">
         <li class="popular__item">
           <h3 class="popular__h3">Перфоратор BOSCH BFG 9000</h3>
-          <img class="popular__img-goods" src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
+          <img class="popular__img-goods" src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218"
+               height="170">
           <ul class="list popular__list-2">
             <li class="popular__item-2">
               <a class="btn popular__link-2 popular__link-2_buy" href="#">купить</a>
@@ -300,27 +301,28 @@
   <div class="double-section">
     <div class="container">
       <section class="about-us">
-        <h2>компания «техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
+        <h2 class="about-us__title">компания «техномарт»</h2>
+        <p class="about-us__p">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит
           равнодушными любителей сэкономить на гастарбайтерах.
         </p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p class="about-us__p">Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
         </p>
-        <ul>
-          <li><a href="#">Деловые линии</a></li>
-          <li><a href="#">Автотрейдинг</a></li>
-          <li><a href="#">ЖелДорЭкспедиция</a></li>
+        <ul class="list about-us__list">
+          <li class="about-us__item">Деловые линии</li>
+          <li class="about-us__item">Автотрейдинг</li>
+          <li class="about-us__item">ЖелДорЭкспедиция</li>
         </ul>
-        <a class="btn btn-default" href="#">подробнее о компании</a>
+        <a class="btn btn-default btn-default-about-us" href="#">подробнее о компании</a>
       </section>
 
       <section class="contacts">
-        <h2>контакты</h2>
-        <p>Вы можете забрать товар сами,
+        <h2 class="contacts__title">контакты</h2>
+        <p class="contacts__p">Вы можете забрать товар сами,
           заехав в наш офис:</p>
-        <img src="img/map.jpg" alt="" width="300" height="158">
-        <a class="btn btn-default" href="#">заблудились? напишите нам!</a>
+        <img class="contacts__img" src="img/map.jpg" alt="" width="300" height="158">
+        <a class="btn btn-default btn-default-contacts" href="#">заблудились? напишите нам!</a>
       </section>
     </div>
   </div>
@@ -385,7 +387,8 @@
           <a class="social-list__link" data-social="instagram" href="https://www.instagram.com/?hl=ru" target="_blank">instagram</a>
         </li>
       </ul>
-      <p class="footer-feedback">Обратная связь: <a class="footer-feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+      <p class="footer-feedback">Обратная связь: <a class="footer-feedback__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
       <p class="footer-developed-by">Разработано —
         <a class="footer-developed-by__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
       </p>
@@ -393,24 +396,33 @@
   </div>
 </footer>
 
-<section class="modal modal-write-us">
+<section class="modal write-us">
   <h2 class="visually-hidden">написать нам</h2>
-  <form class="write-us" method="post" action="https://echo.htmlacademy.ru">
-    <p>
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-    </p>
-    <p>
-      <label for="email-field">Ваш e-mail:</label>
-      <input type="text" name="email" id="email-field" placeholder="email@example.com">
-    </p>
-    <p>
-      <label for="text-email-field">Текст письма:</label>
-      <textarea name="email" id="text-email-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-    </p>
-    <input type="submit" value="отправить">
+  <button class="write-us__modal-close" aria-label="закрывает окно написать нам"></button>
+  <form class="write-us__form" method="post" action="https://echo.htmlacademy.ru">
+    <div class="write-us__top">
+      <div class="write-us__container">
+        <p class="write-us__p">
+          <label class="write-us__label" for="name-field">Ваше имя:</label>
+          <input class="write-us__field" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="write-us__p">
+          <label class="write-us__label" for="email-field">Ваш e-mail:</label>
+          <input class="write-us__field" type="text" name="email" id="email-field" placeholder="email@example.com">
+        </p>
+        <p class="write-us__p">
+          <label class="write-us__label" for="text-email-field">Текст письма:</label>
+          <textarea class="write-us__field write-us__field_area" name="email" id="text-email-field" cols="30" rows="10"
+                    placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+    </div>
+    <div class="write-us__bottom">
+      <div class="write-us__container">
+        <input class="btn btn-default btn-default-write-us" type="submit" value="отправить">
+      </div>
+    </div>
   </form>
-  <button class="modal-close" aria-label="закрывает окно написать нам">x</button>
 </section>
 
 <section class="modal modal-map">
