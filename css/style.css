@@ -969,13 +969,14 @@ input[type="radio"].visually-hidden {
 
   font-family: "Cuprum", Arial, sans-serif;
 
+  background-color: rgba(255, 255, 255, 1);
   border-top: 7px solid rgba(255, 82, 87, 1);;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 
   transform: translateX(-50%);
 }
 
-.write-us__modal-close {
+.btn-modal-close {
   position: absolute;
   top: 9px;
   right: 9px;
@@ -987,7 +988,7 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.write-us__modal-close:hover {
+.btn-modal-close:hover {
   cursor: pointer;
 }
 
@@ -1063,6 +1064,24 @@ input[type="radio"].visually-hidden {
 
   border: none;
 }
+
+/*modal modal-map*/
+.modal-map {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 80px;
+  margin-bottom: 200px;
+
+  width: 940px;
+  height: 446px;
+
+  box-shadow: 0 0 15px 1px rgba(47, 42, 43, 0.5);
+  background: rgba(86, 86, 86, 1) url("../img/map-large.jpg") 0 0 no-repeat;
+
+  transform: translateX(-50%);
+}
+
+
 
 /*catalog*/
 .catalog-item {
