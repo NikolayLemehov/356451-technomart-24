@@ -1203,9 +1203,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*catalog*/
+/*
 .catalog-item {
   position: relative;
 }
+*/
 
 /*footer*/
 .footer {
