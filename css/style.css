@@ -78,15 +78,21 @@ input[type="radio"].visually-hidden {
   background-color: rgba(41, 52, 73, 1);
 }
 
+.header__top .container {
+  display: flex;
+  min-height: 42px;
+}
+
 /*header header-top header__logo*/
 .header__logo {
+  position: absolute;
+
   display: block;
   width: 220px;
   height: 47px;
 
   background-color: rgba(238, 54, 67, 1);
-
-  overflow: hidden;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .header__logo:hover {
@@ -97,7 +103,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(186, 39, 50, 1);
 }
 
-.header__logo img {
+.header__logo-img {
   display: block;
   margin: 13px auto;
 }
@@ -105,14 +111,15 @@ input[type="radio"].visually-hidden {
 /*header header-top form-search*/
 .form-search {
   position: relative;
+
+  display: flex;
+  margin-left: 220px;
 }
 
 .form-search__field {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 50px;
+  padding: 1px 1px 1px 48px;
   box-sizing: border-box;
 
   font-size: 17px;
@@ -151,19 +158,17 @@ input[type="radio"].visually-hidden {
 
 .form-search__label {
   position: absolute;
-  top: 50%;
+  top: 7px;
   left: 17px;
-
-  transform: translateY(-50%);
 }
 
 .form-search__label::before {
+  content: '';
   display: inline-block;
   width: 17px;
   height: 17px;
 
   vertical-align: middle;
-  content: '';
 
   background: url("../img/icon-search.svg") 0 0 no-repeat;
   background-size: 17px 17px;
@@ -184,11 +189,19 @@ input[type="radio"].visually-hidden {
 }
 
 /*header header__top widget*/
+.widget {
+  display: flex;
+  margin-left: auto;
+}
+
+.widget__item {
+  display: flex;
+}
+
 .widget__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 20px;
+  width: 150px;
+  padding: 8px;
 }
 
 .widget__link:hover {
@@ -222,13 +235,13 @@ input[type="radio"].visually-hidden {
 }
 
 .widget__info::before {
+  content: '';
   position: absolute;
   top: 0;
 
   display: block;
 
   opacity: 0.3;
-  content: '';
 }
 
 .widget__link:hover .widget__info::before {
@@ -266,7 +279,8 @@ input[type="radio"].visually-hidden {
 /*header header-top to-process-order*/
 .to-process-order {
   display: block;
-  padding: 14px 20px;
+  width: 150px;
+  padding: 12px 21px 0 21px;
 
   font-size: 17px;
   font-weight: 400;
@@ -287,8 +301,18 @@ input[type="radio"].visually-hidden {
 }
 
 /*header header__middle*/
+.header__middle .container {
+  display: flex;
+  min-height: 158px;
+  padding: 46px 0 35px;
+}
+
 /*header header__middle header__title*/
 .header__title {
+  width: 300px;
+  margin: 0 20px 0 0;
+  padding: 3px 30px 0 52px;
+
   color: rgba(238, 54, 67, 1);
   font-size: 16px;
   font-style: italic;
@@ -300,7 +324,9 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: block;
-  padding: 14px 20px 14px 75px;
+  width: 270px; /*временно*/
+  height: 45px; /*временно*/
+  padding: 9px 10px 5px 71px;
 
   font-size: 21px;
   font-style: normal;
@@ -312,22 +338,22 @@ input[type="radio"].visually-hidden {
 }
 
 .header-contacts__link_phone::before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 15px;
+  top: 10px;
+  left: 12px;
 
   display: block;
   width: 19px;
   height: 19px;
 
   background: url("../img/icon-phone.svg") no-repeat 0 0;
-  background-size: 19px 19px;
-
-  content: '';
-  transform: translateY(-50%);
 }
 
 .header-contacts__address {
+  margin: 0;
+  padding: 4px 0 0 10px;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -337,8 +363,34 @@ input[type="radio"].visually-hidden {
 
 /*header user-navigation*/
 /*header user-navigation user-navigation-out*/
+.user-navigation {
+  margin-left: auto;
+}
+
+.user-navigation-out,
+.user-navigation-inside {
+  display: none;
+}
+
+.user-navigation-active {
+  display: block;
+}
+
+.user-navigation-out__list {
+  display: flex;
+}
+
+.user-navigation-out__item {
+  margin-right: 10px;
+}
+
+.user-navigation-out__item:last-child {
+  margin-right: 0;
+}
+
 .user-navigation-out__link {
   display: block;
+  height: 45px; /*временно*/
 
   font-size: 21px;
   font-weight: 400;
@@ -358,12 +410,15 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-out__link-login {
   position: relative;
-  padding: 15px 20px 15px 50px;
+
+  width: 121px; /*временно*/
+  padding: 12px 20px 15px 47px;
 }
 
 .user-navigation-out__link-login::before {
+  content: '';
   position: absolute;
-  top: 50%;
+  top: 14px;
   left: 14px;
 
   display: block;
@@ -371,11 +426,6 @@ input[type="radio"].visually-hidden {
   height: 17px;
 
   background: url("../img/icon-login.svg") no-repeat 0 0;
-  background-size: 20px 17px;
-
-  transform: translateY(-50%);
-
-  content: '';
 }
 
 .user-navigation-out__item:hover .user-navigation-out__link-login::before {
@@ -387,15 +437,22 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-out__link-registration {
-  padding: 15px 25px 15px 25px;
+  width: 150px; /*временно*/
+  padding: 12px 25px 12px 24px;
 }
 
 /*header user-navigation user-navigation-inside*/
+.user-navigation-inside__list_bottom {
+  display: flex;
+  padding: 6px 0 0 0;
+}
+
 .user-navigation-inside__link-name {
   position: relative;
 
   display: block;
-  padding: 14px 20px 11px 47px;
+  width: 299px; /*временно*/
+  padding: 12px 20px 11px 47px;;
 
   font-size: 21px;
   font-weight: 400;
@@ -410,6 +467,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-inside__link-name::before {
+  content: '';
   position: absolute;
   top: 50%;
   left: 13px;
@@ -422,8 +480,6 @@ input[type="radio"].visually-hidden {
   background-size: 20px 18px;
 
   transform: translateY(-50%);
-
-  content: '';
 }
 
 .user-navigation-inside__item:hover .user-navigation-inside__link-name::before {
@@ -435,6 +491,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-inside__link-name::after {
+  content: '';
   position: absolute;
   top: 50%;
   right: 10px;
@@ -447,8 +504,6 @@ input[type="radio"].visually-hidden {
   background-size: 21px 17px;
 
   transform: translateY(-50%);
-
-  content: '';
 }
 
 .user-navigation-inside__item:hover .user-navigation-inside__link-name::after {
@@ -460,11 +515,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-inside__link {
+  margin: 0 0 0 18px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   text-decoration: underline;
   color: rgba(50, 66, 92, 1);
+
 }
 
 .user-navigation-inside__link:hover {
@@ -475,19 +533,51 @@ input[type="radio"].visually-hidden {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.user-navigation-inside__item:not(:first-child) .user-navigation-inside__link {
+  position: relative;
+
+  margin: 0 0 0 32px;
+}
+
+.user-navigation-inside__item:not(:first-child) .user-navigation-inside__link::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -17px;
+  width: 4px;
+  height: 5px;
+
+  background: url("../img/dot-marker.svg") 0 0 no-repeat;
+}
+
 /*header main-navigation*/
+.main-navigation {
+  padding-bottom: 60px;
+}
+
 .main-navigation__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
   background-color: rgba(50, 66, 92, 1);
+}
+
+.main-navigation__item {
+  flex-grow: 1;
 }
 
 .main-navigation__link {
   display: block;
-  padding: 20px 30px;
+  padding: 20px 30px 23px 29px;
 
   font-size: 17px;
   font-weight: 400;
   line-height: 17px;
+  text-align: center;
   color: rgba(255, 255, 255, 1);
+
+  box-shadow: inset 0 -5px 0 rgba(41, 52, 73, 1);
 }
 
 .main-navigation__link:hover {
@@ -497,6 +587,14 @@ input[type="radio"].visually-hidden {
 .main-navigation__link:active {
   background-color: rgba(29, 39, 57, 1);
   opacity: 0.5;
+}
+
+.main-navigation__item:first-child .main-navigation__link {
+  padding-left: 51px;
+}
+
+.main-navigation__item:last-child .main-navigation__link {
+  padding-right: 52px;
 }
 
 /*promo*/
@@ -749,7 +847,6 @@ input[type="radio"].visually-hidden {
 .promo-slider__link {
   width: 195px;
   height: 38px;
-  /*margin: 0 auto;*/ /*временно*/
   padding: 10px 25px;
 
   text-align: center;
@@ -1338,4 +1435,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
 }
 
-
+/*временно*/
+.hidden-block {
+  display: none;
+}
