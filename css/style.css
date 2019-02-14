@@ -543,6 +543,11 @@ input[type="radio"].visually-hidden {
   content: '';
 }
 
+.promo-item.item-new::before {
+  top: 0;
+  right: 0;
+}
+
 .promo-item::after {
   position: absolute;
   display: block;
