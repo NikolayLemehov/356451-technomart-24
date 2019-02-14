@@ -643,11 +643,18 @@ input[type="radio"].visually-hidden {
   line-height: 38px;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: center;
+  vertical-align: middle;
   color: rgba(255, 255, 255, 1);
 
   background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
+}
+
+.promo-item__link:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-item__link:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .promo-slider {
