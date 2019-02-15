@@ -734,9 +734,9 @@ input[type="radio"].visually-hidden {
   padding-left: 23px;
 
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 700; /*не совпададет с макетом*/
   line-height: 30px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.5px; /*не совпададет с макетом*/
   color: rgba(255, 255, 255, 1);
 }
 
@@ -843,7 +843,7 @@ input[type="radio"].visually-hidden {
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 700; /*не совпадает с макетом*/
   line-height: 36px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -868,11 +868,19 @@ input[type="radio"].visually-hidden {
 }
 
 /*popular*/
-.header-section {
+.popular__header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 89px;
+  margin-bottom: 21px;
+
   background-color: rgba(249, 245, 240, 1);
 }
 
 .popular__h2 {
+  margin: 30px 25px 20px 28px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -904,21 +912,32 @@ input[type="radio"].visually-hidden {
 
 .btn-default-popular {
   width: 253px;
+  margin: 25px 25px 20px 25px;
   padding-top: 10px;
   padding-bottom: 10px;
 
   text-align: center;
 }
 
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .popular-item {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .goods-card {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 220px;
-  /*height: 318px;*/
+  min-height: 318px;
 
   border: 1px solid rgba(229, 229, 229, 1);
 }
@@ -929,17 +948,56 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-card__h3 {
+  order: 3;
+  margin: auto 14px 11px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  text-align: center;
+}
+
+.goods-card__container-top {
+  flex-basis: 170px;
+}
+
+.goods-card__img {
+  order: 1;
+}
+
+.goods-card:hover .goods-card__img {
+  display: none;
+}
+
+.goods-card__control {
+  display: none;
+  order: 2;
+}
+
+.goods-card:hover .goods-card__control {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  order: 2;
+}
+
+.goods-card__control-item {
+  margin: 43px 0 0 0;
+  padding: 0;
+}
+
+.goods-card__control-item:not(:first-child) {
+  margin: 8px 0 0 0;
 }
 
 .goods-card__link {
+  position: relative;
+
   display: block;
   width: 135px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px; /*временно*/
+  min-height: 38px;
+  padding: 11px 0 10px 4px;
+  /*margin-bottom: 10px;*/ /*временно*/
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -968,7 +1026,21 @@ input[type="radio"].visually-hidden {
   box-shadow: none;
 }
 
+.goods-card__link_buy::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+
+  width: 15px;
+  height: 15px;
+
+  background: url("../img/icon-cart.svg") 0 0 no-repeat;
+  opacity: 0.3;
+}
+
 .goods-card__link_bookmark {
+  padding: 7px 0 6px 4px;
+
   color: rgba(50, 66, 92, 1);
 
   background-color: rgba(255, 255, 255, 1);
@@ -984,6 +1056,9 @@ input[type="radio"].visually-hidden {
 }
 
 .goods-card__price-before {
+  order: 4;
+  margin: 0 0 10px 4px;
+
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
@@ -992,11 +1067,19 @@ input[type="radio"].visually-hidden {
   color: rgba(153, 153, 153, 1);
 }
 
+.goods-card__price-before_false::after {
+  content: 'скидок нет';
+  pointer-events: none;
+  opacity: 0;
+}
+
 .goods-card__price-now {
   position: relative;
 
+  order: 5;
   width: 141px;
   height: 38px;
+  margin: 0 0 21px 8px;
   padding-top: 10px;
   padding-left: 35px;
 
@@ -1010,6 +1093,10 @@ input[type="radio"].visually-hidden {
 }
 
 /*brands*/
+.brands {
+  padding-bottom: 41px;
+}
+
 .brands__card {
   position: relative;
 
@@ -1031,16 +1118,45 @@ input[type="radio"].visually-hidden {
 }
 
 .brands__link {
-  display: block;
+  display: flex;
   width: 100%;
-  height: 145px;
+  height: 142px;
 }
 
 .brands__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.brands__img[alt="Bosch"] {
+  margin: 51px auto auto 46px;
+}
+
+.brands__img[alt="Makita"] {
+  margin: 48px auto auto 47px;
+}
+
+.brands__img[alt="DeWALT"] {
+  margin: 46px auto auto 36px;
+}
+
+.brands__img[alt="Интерскол"] {
+  margin: 19px auto auto 8px;
+}
+
+.brands__img[alt="HITACHI"] {
+  margin: 57px auto auto 27px;
+}
+
+.brands__img[alt="LG"] {
+  margin: 34px auto auto 47px;
+}
+
+.brands__img[alt="AEG"] {
+  margin: 22px auto auto 34px;
+}
+
+.brands__img[alt="metabo"] {
+  margin: 33px auto auto 9px;
 }
 
 /*services*/

@@ -141,16 +141,16 @@
 
   <section class="popular">
     <div class="container">
-      <div class="header-section">
+      <div class="popular__header-section">
         <h2 class="popular__h2">популярные товары:</h2>
         <a class="btn btn-default btn-default-popular" href="#">все популярные товары</a>
       </div>
-      <ul class="list popular__list">
+      <ul class="list popular__list popular__list_goods">
         <li class="popular-item goods-card">
           <h3 class="goods-card__h3">Перфоратор BOSCH BFG 9000</h3>
-          <img class="goods-card__img" src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218"
+          <img class="goods-card__img goods-card__container-top" src="img/Perforator_9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="218"
                height="170">
-          <ul class="list goods-card__control">
+          <ul class="list goods-card__control goods-card__container-top">
             <li class="goods-card__control-item">
               <a class="btn goods-card__link goods-card__link_buy" href="#">купить</a>
             </li>
@@ -163,8 +163,8 @@
         </li>
         <li class="popular-item goods-card">
           <h3 class="goods-card__h3">Перфоратор BOSCH BFG 3000</h3>
-          <img class="goods-card__img" src="img/Perforator_3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-          <ul class="list goods-card__control">
+          <img class="goods-card__img goods-card__container-top" src="img/Perforator_3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
+          <ul class="list goods-card__control goods-card__container-top">
             <li class="goods-card__control-item">
               <a class="btn goods-card__link goods-card__link_buy" href="#">купить</a>
             </li>
@@ -177,8 +177,8 @@
         </li>
         <li class="popular-item goods-card">
           <h3 class="goods-card__h3">Перфоратор BOSCH BFG 6000</h3>
-          <img class="goods-card__img" src="img/Perforator_6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-          <ul class="list goods-card__control">
+          <img class="goods-card__img goods-card__container-top" src="img/Perforator_6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
+          <ul class="list goods-card__control goods-card__container-top">
             <li class="goods-card__control-item">
               <a class="btn goods-card__link goods-card__link_buy" href="#">купить</a>
             </li>
@@ -191,8 +191,8 @@
         </li>
         <li class="popular-item goods-card item-new">
           <h3 class="goods-card__h3">Перфоратор BOSCH BFG 2000</h3>
-          <img class="goods-card__img" src="img/Perforator_2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-          <ul class="list goods-card__control">
+          <img class="goods-card__img goods-card__container-top" src="img/Perforator_2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
+          <ul class="list goods-card__control goods-card__container-top">
             <li class="goods-card__control-item">
               <a class="btn goods-card__link goods-card__link_buy" href="#">купить</a>
             </li>
@@ -200,7 +200,7 @@
               <a class="btn goods-card__link goods-card__link_bookmark" href="#">в закладки</a>
             </li>
           </ul>
-          <p class="hidden goods-card__price-before"></p>
+          <p class="goods-card__price-before goods-card__price-before_false"></p>
           <p class="goods-card__price-now">12500 р.</p>
         </li>
       </ul>
@@ -209,12 +209,12 @@
 
   <section class="brands">
     <div class="container">
-      <div class="header-section">
+      <div class="popular__header-section">
         <h2 class="popular__h2 brands__h2">популярные производители:</h2>
         <a class="btn btn-default btn-default-popular" href="#">все производители</a>
       </div>
-      <ul class="list">
-        <li class="popular-item popular-item brands__card">
+      <ul class="list popular__list popular__list_brands">
+        <li class="popular-item brands__card">
           <a class="brands__link" href="#">
             <img class="brands__img" src="img/bosch.png" alt="Bosch" width="126" height="37">
           </a>
