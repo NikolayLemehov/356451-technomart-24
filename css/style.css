@@ -1288,8 +1288,37 @@ input[type="radio"].visually-hidden {
   right: -10px;
 }
 
+/*double-section*/
+.double-section {
+  padding: 77px 0 85px 0;
+}
+
+.double-section > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.double-section > .container > * { /*временно*/
+  /*outline: 1px solid rosybrown;*/
+}
+
+.about-us,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 540px;
+}
+
 /*about-us*/
+
+
 .about-us__title {
+  margin: 0 0 26px 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
@@ -1298,21 +1327,28 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us__p {
+  margin: 0 0 24px 0;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.12px; /*не подходит шрифт*/
 }
 
 .about-us__item {
   position: relative;
 
   margin-bottom: 20px;
-  padding-left: 35px;
+  padding-left: 36px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.about-us__list {
+  margin: -3px 0 37px 0;
 }
 
 .about-us__item::before {
@@ -1330,7 +1366,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-default-about-us {
-  display: inline-block;
+  align-self: flex-start;
   min-width: 220px;
   max-width: 540px;
   padding: 10px 35px;
@@ -1339,14 +1375,23 @@ input[type="radio"].visually-hidden {
 }
 
 /*contacts*/
+.contacts {
+  width: 300px;
+}
+
 .contacts__title {
+  margin: 0 0 26px 0;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts__p {
+  margin: 0 0 31px 0;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
@@ -1355,7 +1400,7 @@ input[type="radio"].visually-hidden {
 .btn-default-contacts {
   display: inline-block;
   width: 300px;
-  padding: 10px 35px;
+  padding: 10px 20px 10px 26px;
 
   text-align: center;
 }
