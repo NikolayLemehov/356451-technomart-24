@@ -861,10 +861,40 @@ input[type="radio"].visually-hidden {
 
 .promo-slider__link {
   width: 195px;
-  height: 38px;
   padding: 10px 25px;
 
   text-align: center;
+}
+
+.promo-slider__dot-list {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+
+  display: flex;
+
+  overflow: hidden;
+
+  transform: translateX(-50%);
+}
+
+.promo-slider__dot-item:not(:first-child){
+  margin-left: 10px;
+}
+
+.promo-slider__dot-btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.promo-slider__dot-btn_active {
+  background-color: rgba(238, 54, 67, 1);
 }
 
 /*popular*/
