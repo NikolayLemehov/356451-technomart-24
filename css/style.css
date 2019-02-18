@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 0 0 500px; /*временно*/
+  margin: 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -113,6 +113,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   display: flex;
+  width: 270px;
   margin-left: 220px;
 }
 
@@ -978,7 +979,7 @@ input[type="radio"].visually-hidden {
   border-color: rgba(229, 229, 229, 0);
 }
 
-.goods-card__h3 {
+.goods-card__title {
   order: 3;
   margin: auto 14px 11px;
 
@@ -1638,9 +1639,74 @@ input[type="radio"].visually-hidden {
   background-color: rgba(242, 246, 248, 1);
 }
 
-/*filters*/
-.filters {
+/*filter-section*/
+.filter-section {
   width: 220px;
+}
+
+.filter__h2 {
+  height: 38px;
+  padding: 11px 0 0 19px;
+  margin: 20px 0;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: rgba(247, 243, 236, 1);
+  border-radius: 2px;
+}
+
+
+
+.filter__field-set {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+}
+
+.filter__field-set:first-child {
+  min-height: 188px; /*временно*/
+}
+
+.filter__legend {
+  padding: 16px 0 0 0;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.filter__field-set:first-child .filter__legend {
+  padding: 0;
+  line-height: 13px;
+}
+
+.filter__list {
+  margin: 13px 0 0 0;
+  padding: 0 0 3px 0;
+}
+
+.filter__option {
+  position: relative;
+
+  margin: 0 0 16px 0;
+  padding: 0 0 0 35px;
+}
+
+.filter__label {
+  padding: 0 0 0 0;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 /*right-column*/
@@ -1656,6 +1722,7 @@ input[type="radio"].visually-hidden {
   margin: 20px 0;
 
   background-color: rgba(247, 243, 236, 1);
+  border-radius: 2px;
 }
 
 .top-filter__h2 {
