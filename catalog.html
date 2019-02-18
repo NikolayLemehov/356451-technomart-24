@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Каталог - Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i;subset=cyrillic"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
         rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -334,12 +336,13 @@
     </div>
   </div>
   <section class="description">
+    <h3 class="visually-hidden">Описание предмета раздела</h3>
     <div class="container">
       <dl class="description__list">
         <dt class="description__term">пара слов о перфораторах</dt>
         <dd class="description__dd">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
-          отверстий в кирпиче, бетоне и камне.
+          отверстий в кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут
           выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
           «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -418,10 +421,10 @@
 
 <section class="modal modal-add-basket">
   <h2>Товар добавлен в корзину!</h2>
-  <section class="controls">
+  <p class="controls">
     <a class="btn" href="#">оформить заказ</a>
     <button class="btn">продолжить покупки</button>
-  </section>
+  </p>
   <button class="modal-close" aria-label="закрывает окно добавленого товара в корзину">x</button>
 </section>
 </body>
