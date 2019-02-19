@@ -589,6 +589,7 @@ input[type="radio"].visually-hidden {
   background-color: rgba(41, 52, 73, 1);
 }
 
+.main-navigation__link_current,
 .main-navigation__link:active {
   background-color: rgba(29, 39, 57, 1);
   opacity: 0.5;
