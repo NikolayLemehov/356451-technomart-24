@@ -112,9 +112,38 @@
     <h1 class="page-title">перфораторы</h1>
     <section class="filter-section">
       <h2 class="filter__h2">фильтр:</h2>
-      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter__field-set">
+      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru"
+            oninput="
+            value_min.value = count_min.value;
+            value_max.value = count_max.value">
+        <fieldset class="filter__field-set filter__field-set_range">
           <legend class="filter__legend">цена:</legend>
+          <div class="filter-range">
+            <div class="filter-range__container_slider">
+              <label class="visually-hidden" for="filter_range_input_min">
+                ползунок минимального значения
+              </label>
+              <label class="visually-hidden" for="filter_range_input_max">
+                ползунок максимального значения
+              </label>
+              <div class="filter-range__line" id="range-line">
+                <div class="filter-range__line-active"></div>
+              </div>
+              <input class="filter-range__input filter-range__input_min"
+                     id="filter_range_input_min" type="range"
+                     name="count_min" value="0" min="0" max="34000" step="500">
+              <input class="filter-range__input filter-range__input_max"
+                     id="filter_range_input_max" type="range"
+                     name="count_max" value="30000" min="0" max="34000" step="500">
+            </div>
+            <div class="filter-range__container_value">
+              <output class="filter-range__value filter-range__value_min" name="value_min">0</output>
+            </div>
+            <div class="filter-range__dash"></div>
+            <div class="filter-range__container_value">
+              <output class="filter-range__value filter-range__value_max" name="value_max">30000</output>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="filter__field-set">
           <legend class="filter__legend">производители:</legend>
