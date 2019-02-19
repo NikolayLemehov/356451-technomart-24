@@ -277,6 +277,10 @@ input[type="radio"].visually-hidden {
   transform: translateX(-100%);
 }
 
+.basket-available-true {
+  background-color: rgba(238, 54, 67, 1);
+}
+
 /*header header-top to-process-order*/
 .to-process-order {
   display: block;
@@ -1694,6 +1698,14 @@ input[type="radio"].visually-hidden {
 
   background: none;
   border: 1px solid rgba(229, 229, 229, 1);
+}
+
+.filter__btn-show:hover {
+  border-color: rgba(189, 198, 202, 1);
+}
+
+.filter__btn-show:active {
+  border-color: rgba(238, 54, 67, 1);
 }
 
 /*right-column*/
