@@ -1795,12 +1795,12 @@ input[type="radio"].visually-hidden {
 /*catalog-list*/
 .catalog-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 0 0 -20px;
 }
 
 .catalog-item {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 20px;
 }
 
 /*pagination-block*/
