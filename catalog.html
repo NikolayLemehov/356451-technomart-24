@@ -120,29 +120,44 @@
           <legend class="filter__legend">производители:</legend>
           <ul class="list filter__list">
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                     name="bosch" id="filter-bosh" checked>
-              <label class="filter__label" for="filter-bosh">bosch</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                       name="bosch" id="filter-bosh" checked disabled>
+                <span class="checkbox-indicator"></span>
+                <span class="content">bosch</span>
+              </label>
             </li>
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
-                     id="filter-interskol" checked>
-              <label class="filter__label" for="filter-interskol">интерскол</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol"
+                       id="filter-interskol" disabled>
+                <span class="checkbox-indicator"></span>
+                <span class="content">интерскол</span>
+              </label>
             </li>
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
-                     id="filter-makita" checked>
-              <label class="filter__label" for="filter-makita">makita</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita"
+                       id="filter-makita" checked>
+                <span class="checkbox-indicator"></span>
+                <span class="content">makita</span>
+              </label>
             </li>
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
-                     id="filter-dewalt" checked>
-              <label class="filter__label" for="filter-dewalt">dewalt</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
+                       id="filter-dewalt">
+                <span class="checkbox-indicator"></span>
+                <span class="content">dewalt</span>
+              </label>
             </li>
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
-                     id="filter-hitachi" checked>
-              <label class="filter__label" for="filter-hitachi">hitachi</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
+                       id="filter-hitachi">
+                <span class="checkbox-indicator"></span>
+                <span class="content">hitachi</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -150,19 +165,25 @@
           <legend class="filter__legend">питание:</legend>
           <ul class="list filter__list">
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                     value="rechargeable" id="filter-rechargeable" checked>
-              <label class="filter__label" for="filter-rechargeable">аккумуляторные</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                       value="rechargeable" id="filter-rechargeable" checked>
+                <span class="checkbox-indicator"></span>
+                <span class="content">аккумуляторные</span>
+              </label>
             </li>
             <li class="filter__option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
-                     value="networked" id="filter-networked">
-              <label class="filter__label" for="filter-networked">сетевые</label>
+              <label class="filter__label">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group"
+                       value="networked" id="filter-networked">
+                <span class="checkbox-indicator"></span>
+                <span class="content">сетевые</span>
+              </label>
             </li>
           </ul>
         </fieldset>
       </form>
-      <button>показать</button>
+      <button class="filter__btn-show" type="submit">показать</button>
     </section>
     <div class="right-column">
       <section class="filter-items">
