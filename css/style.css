@@ -1442,7 +1442,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.btn-default-contacts {
+.about-us__btn {
   display: inline-block;
   width: 300px;
   padding: 10px 20px 10px 26px;
@@ -2345,7 +2345,6 @@ input[type="radio"].visually-hidden {
 .modal-add-basket {
   margin-top: 30px;
 
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 620px;

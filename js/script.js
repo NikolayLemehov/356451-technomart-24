@@ -1,20 +1,14 @@
-var popup = document.querySelector('.modal.write-us');
-var openPopupButtonFlex = document.querySelector('.btn-default-contacts');
-var openPopupButtonBlock = document.querySelector('.btn-default-contacts');
-var closePopupButton = popup.querySelector('.btn-modal-close');
+var openPopupButtonFlex = document.querySelector('.about-us__btn');
+var popupWriteUs = document.querySelector('.modal.write-us');
+var closePopupButton = popupWriteUs.querySelector('.btn-modal-close');
 
 openPopupButtonFlex.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList.add('modal__show_flex');
-});
-
-openPopupButtonBlock.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.add('modal__show_block');
+  popupWriteUs.classList.add('modal__show_flex');
 });
 
 closePopupButton.addEventListener('click', function () {
-  popup.classList.remove('modal__show_flex');
-  popup.classList.remove('modal__show_block');
+  popupWriteUs.classList.remove('modal__show_flex');
+  popupWriteUs.classList.remove('modal__show_block');
 });
 
