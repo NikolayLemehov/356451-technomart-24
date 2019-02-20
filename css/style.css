@@ -757,9 +757,9 @@ input[type="radio"].visually-hidden {
   padding-left: 23px;
 
   font-size: 24px;
-  font-weight: 700; /*не совпададет с макетом*/
+  font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0.5px; /*не совпададет с макетом*/
+  letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -866,10 +866,11 @@ input[type="radio"].visually-hidden {
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
-  font-weight: 700; /*не совпадает с макетом*/
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
 }
 
 .promo-slider__slogan {
@@ -1051,7 +1052,6 @@ input[type="radio"].visually-hidden {
   width: 135px;
   min-height: 38px;
   padding: 11px 0 10px 4px;
-  /*margin-bottom: 10px;*/ /*временно*/
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -1298,9 +1298,6 @@ input[type="radio"].visually-hidden {
   width: 620px;
   height: 288px;
 
-  /*background-color: rgba(100, 149, 237, 0.4);*/ /*временно*/
-  /*overflow: hidden;*/
-
   transform: translateX(100%);
 }
 
@@ -1350,10 +1347,6 @@ input[type="radio"].visually-hidden {
 .double-section > .container {
   display: flex;
   justify-content: space-between;
-}
-
-.double-section > .container > * { /*временно*/
-  /*outline: 1px solid rosybrown;*/
 }
 
 .about-us,
@@ -2426,9 +2419,4 @@ input[type="radio"].visually-hidden {
 .modal-add-basket__continue:hover {
   outline: 1px solid rgba(238, 54, 67, 1);
   cursor: pointer;
-}
-
-/*временно*/
-.hidden-block {
-  display: none;
 }
