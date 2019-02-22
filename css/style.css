@@ -2211,7 +2211,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
 
   width: 620px;
-  min-height: 430px;
+  height: 430px;
 
   font-family: "Cuprum", Arial, sans-serif;
 
