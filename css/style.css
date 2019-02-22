@@ -806,7 +806,7 @@ input[type="radio"].visually-hidden {
   margin-top: auto;
 }
 
-.promo_slider__prev,
+.promo-slider__prev,
 .promo-slider__next {
   position: absolute;
   top: 114px;
@@ -820,12 +820,12 @@ input[type="radio"].visually-hidden {
   z-index: 10;
 }
 
-.promo_slider__prev:hover,
+.promo-slider__prev:hover,
 .promo-slider__next:hover {
   cursor: pointer;
 }
 
-.promo_slider__prev {
+.promo-slider__prev {
   left: 25px;
 
   background: url("../img/icon-left.svg") 0 0 no-repeat;
