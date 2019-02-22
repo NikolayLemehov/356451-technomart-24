@@ -5,7 +5,6 @@ var closePopupButtonWriteUs = popupWriteUs.querySelector('.btn-modal-close');
 var openMap = document.querySelector('.contacts__img');
 var popupMap = document.querySelector('.modal-map');
 var closePopupButtonMap = popupMap.querySelector('.btn-modal-close');
-// var closePopupButtons = document.querySelectorAll('.btn-modal-close');
 
 openPopupButtonFlex.addEventListener('click', function (evt) {
   evt.preventDefault();
