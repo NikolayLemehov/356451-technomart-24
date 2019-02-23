@@ -2347,6 +2347,11 @@ input[type="radio"].visually-hidden {
   background: rgba(86, 86, 86, 1) url("../img/map-large.jpg") 0 0 no-repeat;
 }
 
+.modal-map__frame {
+  border: 0;
+  /*frameborder="0"*/
+}
+
 /*modal modal-add-basket*/
 .modal-add-basket {
   margin-top: 30px;

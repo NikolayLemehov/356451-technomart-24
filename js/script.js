@@ -1,3 +1,5 @@
+var currentLocation = window.location;
+
 function writeUs() {
   var openPopupButton = document.querySelector('.about-us__btn');
   var popup = document.querySelector('.modal.write-us');
@@ -129,8 +131,16 @@ function slider() {
   }
 }
 
-writeUs();
-map();
-goodsCardBasket();
-service();
-slider();
+if (currentLocation.pathname === '/356451-technomart-24/index.html') {
+  writeUs();
+  map();
+  goodsCardBasket();
+  service();
+  slider();
+}
+
+if (currentLocation.pathname === "/356451-technomart-24/catalog.html") {
+  goodsCardBasket();
+}
+
+
