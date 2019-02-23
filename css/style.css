@@ -1180,7 +1180,8 @@ input[type="radio"].visually-hidden {
 }
 
 .brands__img {
-  display: flex;}
+  display: flex;
+}
 
 .brands__img[alt="Bosch"] {
   margin: 51px auto auto 46px;
@@ -2035,7 +2036,11 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 24px;
   font-style: normal;
-  color: #f1f5f7;
+  color: rgba(241, 245, 247, 1);
+}
+
+.footer-top__phone {
+  color: rgba(243, 247, 249, 1);
 }
 
 .footer-navigation {
