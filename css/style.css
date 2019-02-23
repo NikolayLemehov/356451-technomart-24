@@ -1180,8 +1180,7 @@ input[type="radio"].visually-hidden {
 }
 
 .brands__img {
-  margin: auto;
-}
+  display: flex;}
 
 .brands__img[alt="Bosch"] {
   margin: 51px auto auto 46px;
