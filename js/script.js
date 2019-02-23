@@ -131,7 +131,7 @@ function slider() {
   }
 }
 
-if (currentLocation.pathname === '/356451-technomart-24/index.html') {
+if (currentLocation.pathname.lastIndexOf('/356451-technomart-24/index.html') >= 0) {
   writeUs();
   map();
   goodsCardBasket();
@@ -139,7 +139,7 @@ if (currentLocation.pathname === '/356451-technomart-24/index.html') {
   slider();
 }
 
-if (currentLocation.pathname === "/356451-technomart-24/catalog.html") {
+if (currentLocation.pathname.lastIndexOf("/356451-technomart-24/catalog.html") >= 0) {
   goodsCardBasket();
 }
 

@@ -2349,13 +2349,10 @@ input[type="radio"].visually-hidden {
 
 .modal-map__frame {
   border: 0;
-  /*frameborder="0"*/
 }
 
 /*modal modal-add-basket*/
 .modal-add-basket {
-  margin-top: 30px;
-
   flex-direction: column;
   justify-content: flex-end;
   width: 620px;
