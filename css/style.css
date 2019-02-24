@@ -2354,7 +2354,6 @@ input[type="radio"].visually-hidden {
 /*modal modal-add-basket*/
 .modal-add-basket {
   flex-direction: column;
-  justify-content: flex-end;
   width: 620px;
   height: 282px;
   font-family: "Cuprum", Arial, sans-serif;
