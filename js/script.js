@@ -39,11 +39,15 @@ function writeUs() {
   closePopupButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal__show_flex");
+    popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function (evt) {
+
     if (!nameField.value || !emailField.value || !textField.value) {
       evt.preventDefault();
-      console.log("Нужно ввести пароль");
+      popup.classList.remove("modal-error");
+      void popup.offsetWidth;
+      popup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("nameField", nameField.value);
@@ -56,6 +60,7 @@ function writeUs() {
       evt.preventDefault();
       if (popup.classList.contains("modal__show_flex")) {
         popup.classList.remove("modal__show_flex");
+        popup.classList.remove("modal-error");
       }
     }
   });
