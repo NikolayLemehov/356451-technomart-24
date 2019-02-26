@@ -129,36 +129,41 @@
     <h1 class="page-title">перфораторы</h1>
     <section class="filter-section">
       <h2 class="filter__h2">фильтр:</h2>
-      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru"
-            oninput="
-            value_min.value = count_min.value;
-            value_max.value = count_max.value">
+      <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter__field-set filter__field-set_range">
           <legend class="filter__legend">цена:</legend>
           <div class="filter-range">
             <div class="filter-range__container_slider">
-              <label class="visually-hidden" for="filter_range_input_min">
-                ползунок минимального значения
-              </label>
-              <label class="visually-hidden" for="filter_range_input_max">
-                ползунок максимального значения
-              </label>
-              <div class="filter-range__line" id="range-line">
-                <div class="filter-range__line-active"></div>
-              </div>
-              <input class="filter-range__input filter-range__input_min"
-                     id="filter_range_input_min" type="range"
-                     name="count_min" value="0" min="0" max="34000" step="500">
-              <input class="filter-range__input filter-range__input_max"
-                     id="filter_range_input_max" type="range"
-                     name="count_max" value="30000" min="0" max="34000" step="500">
+              <table class="range-slider">
+                <tr>
+                  <td class="range-slider__td range-slider__td_left">
+                    <div class="range-slider__img-wrap">
+                      <img class="range-slider__thumb range-slider__thumb_left" src="img/filter-button.svg"
+                           alt="левая кнопка" width="20" height="23">
+                    </div>
+                  </td>
+                  <td class="range-slider__td range-slider__td_center"></td>
+                  <td class="range-slider__td range-slider__td_right">
+                    <div class="range-slider__img-wrap">
+                      <img class="range-slider__thumb range-slider__thumb_right" src="img/filter-button.svg"
+                           alt="правая кнопка" width="20" height="23">
+                    </div>
+                  </td>
+                </tr>
+              </table>
             </div>
             <div class="filter-range__container_value">
-              <output class="filter-range__value filter-range__value_min" name="value_min">0</output>
+              <label>
+                <input class="filter-range__value filter-range__value_min" type="text"
+                       name="value_min" value="20" data-min_value="0">
+              </label>
             </div>
             <div class="filter-range__dash"></div>
             <div class="filter-range__container_value">
-              <output class="filter-range__value filter-range__value_max" name="value_max">30000</output>
+              <label>
+                <input class="filter-range__value filter-range__value_max" type="text"
+                       name="value_max" value="80" data-max_value="200">
+              </label>
             </div>
           </div>
         </fieldset>
