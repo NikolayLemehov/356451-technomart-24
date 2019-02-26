@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 18px;
 
-  background-color: inherit;
+  background-color: rgba(41, 52, 73, 1);
   border: none;
 }
 
@@ -1006,7 +1006,9 @@ input[type="radio"].visually-hidden {
 
 .goods-card__title {
   order: 3;
-  margin: auto 14px 11px;
+  max-width: 100%;
+  margin: auto 0 11px;
+  padding: 0 14px;
 
   font-size: 18px;
   font-weight: 700;
