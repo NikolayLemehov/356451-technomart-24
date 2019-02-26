@@ -93,6 +93,7 @@ function goodsCardBasket() {
   var openPopupButtonList = document.querySelectorAll(".goods-card__link_buy");
   var popup = document.querySelector(".modal-add-basket");
   var closePopupButton = popup.querySelector(".btn-modal-close");
+  var closePopupBigButton = popup.querySelector(".modal-add-basket__continue");
 
   for (var i = 0; i < openPopupButtonList.length; i++) {
     var openPopupButton = openPopupButtonList[i];
@@ -106,7 +107,10 @@ function goodsCardBasket() {
     evt.preventDefault();
     popup.classList.remove("modal__show_flex");
   });
-
+  closePopupBigButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal__show_flex");
+  });
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();

@@ -2055,6 +2055,7 @@ input[type="radio"].visually-hidden {
 .footer-navigation {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .footer-navigation__item {
