@@ -315,8 +315,8 @@ input[type="radio"].visually-hidden {
 /*header header__middle header__title*/
 .header__title {
   width: 300px;
-  margin: 0 20px 0 0;
-  padding: 3px 30px 0 52px;
+  margin: 0 15px 0 0;
+  padding: 3px 25px 0 52px;
 
   color: rgba(238, 54, 67, 1);
   font-size: 16px;
