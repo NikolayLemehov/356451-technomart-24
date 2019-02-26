@@ -2379,7 +2379,7 @@ input[type="radio"].visually-hidden {
 .btn-default-write-us {
   display: block;
   width: 460px;
-  min-height: 38px;
+  height: 38px;
   margin: auto;
   padding: 0;
 
