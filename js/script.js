@@ -78,6 +78,15 @@ function map() {
     evt.preventDefault();
     popup.classList.remove("modal__show_block");
   });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal__show_block")) {
+        popup.classList.remove("modal__show_block");
+      }
+    }
+  });
 }
 
 function goodsCardBasket() {
@@ -96,6 +105,15 @@ function goodsCardBasket() {
   closePopupButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal__show_flex");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal__show_flex")) {
+        popup.classList.remove("modal__show_flex");
+      }
+    }
   });
 }
 
