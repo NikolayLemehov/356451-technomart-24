@@ -180,7 +180,6 @@ function filterRangeSlider() {
   var filterRange = document.querySelector(".filter-range");
   var rangeSlider = document.querySelector(".range-slider");
   var tdLeft = rangeSlider.querySelector(".range-slider__td_left");
-  // var tdCenter = rangeSlider.querySelector(".range-slider__td_center");
   var tdRight = rangeSlider.querySelector(".range-slider__td_right");
   var thumbLeft = rangeSlider.querySelector(".range-slider__thumb_left");
   var thumbRight = rangeSlider.querySelector(".range-slider__thumb_right");
@@ -269,6 +268,7 @@ function filterRangeSlider() {
       if (0 <= this.value <= (tdLeftMaxWidth - thumbWidth) * ratio) {
         tdLeft.style.width = (Number(this.value) / ratio + Number(thumbWidth)) + "px";
       }
+      this.select();
     }
   });
 
@@ -285,6 +285,7 @@ function filterRangeSlider() {
       if (valueMin.value <= this.value <= (tableWidth - thumbWidth * 2) * ratio) {
         tdRight.style.width = (Number(tableWidth) - Number(valueMax.value) / ratio - Number(thumbWidth)) + "px";
       }
+      this.select();
     }
   });
 
