@@ -1274,6 +1274,7 @@ input[type="radio"].visually-hidden {
 
   background-color: rgba(50, 66, 92, 1);
   box-shadow: 0 1px 0 rgba(41, 52, 73, 1), inset 0 1px 0 rgba(64, 80, 105, 1);
+  border: none;
 }
 
 .service__item:not(.service__item_active):hover .service__link {
