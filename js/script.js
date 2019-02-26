@@ -42,7 +42,6 @@ function writeUs() {
     popup.classList.remove("modal-error");
   });
   form.addEventListener("submit", function (evt) {
-
     if (!nameField.value || !emailField.value || !textField.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
