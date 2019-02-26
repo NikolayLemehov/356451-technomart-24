@@ -187,7 +187,8 @@ function filterRangeSlider() {
   var thumbWidth = thumbRight.offsetWidth;
   var valueMin = filterRange.querySelector(".filter-range__value_min");
   var valueMax = filterRange.querySelector(".filter-range__value_max");
-  var widthTable = rangeSlider.offsetWidth;
+  var tableWidth = rangeSlider.offsetWidth;
+  var ratio = (valueMax.dataset.max_value - valueMin.dataset.min_value) / (tableWidth - thumbWidth * 2);
 
   function getCoords(elem) {
     var box = elem.getBoundingClientRect();
@@ -199,8 +200,8 @@ function filterRangeSlider() {
   }
 
   function init() {
-    tdLeft.style.width = (Number(valueMin.value) + Number(thumbWidth)) + "px";
-    tdRight.style.width = (Number(widthTable) - Number(valueMax.value) - Number(thumbWidth)) + "px";
+    tdLeft.style.width = (Number(valueMin.value) / ratio + Number(thumbWidth)) + "px";
+    tdRight.style.width = (Number(tableWidth) - Number(valueMax.value) / ratio - Number(thumbWidth)) + "px";
   }
 
   thumbLeft.onmousedown = function (evt) {
@@ -216,14 +217,14 @@ function filterRangeSlider() {
       if (newLeft <= shiftX) {
         widthTd = thumbWidth;
       }
-      if (widthTd > widthTable - widthTdRight) {
-        widthTd = widthTable - widthTdRight;
+      if (widthTd > tableWidth - widthTdRight) {
+        widthTd = tableWidth - widthTdRight;
       }
       tdLeft.style.width = widthTd + "px";
       document.onmouseup = function () {
         document.onmousemove = document.onmouseup = null;
       };
-      valueMin.value = tdLeft.offsetWidth - thumbWidth;
+      valueMin.value = (tdLeft.offsetWidth - thumbWidth) * ratio;
     };
     return false;
   };
@@ -242,31 +243,31 @@ function filterRangeSlider() {
       if (newRight <= shiftX) {
         widthTd = thumbWidth;
       }
-      if (widthTd > widthTable - widthTdLeft) {
-        widthTd = widthTable - widthTdLeft;
+      if (widthTd > tableWidth - widthTdLeft) {
+        widthTd = tableWidth - widthTdLeft;
       }
       tdRight.style.width = widthTd + "px";
       document.onmouseup = function () {
         document.onmousemove = document.onmouseup = null;
       };
-      valueMax.value = widthTable - tdRight.offsetWidth - thumbWidth;
+      valueMax.value = (tableWidth - tdRight.offsetWidth - thumbWidth) * ratio;
     };
     return false;
   };
 
   valueMin.addEventListener("keydown", function (evt) {
-    var tdLeftMaxWidth = widthTable - tdRight.offsetWidth;
+    var tdLeftMaxWidth = tableWidth - tdRight.offsetWidth;
     if (evt.keyCode === 13 && this.focus) {
       if (this.value < 0) {
         this.value = 0;
         tdLeft.style.width = thumbWidth + "px";
       }
-      if (this.value > tdLeftMaxWidth - thumbWidth) {
-        this.value = tdLeftMaxWidth - thumbWidth;
+      if (this.value > (tdLeftMaxWidth - thumbWidth) * ratio) {
+        this.value = (tdLeftMaxWidth - thumbWidth) * ratio;
         tdLeft.style.width = tdLeftMaxWidth + "px";
       }
-      if (0 <= this.value <= tdLeftMaxWidth - thumbWidth) {
-        tdLeft.style.width = (Number(this.value) + Number(thumbWidth)) + "px";
+      if (0 <= this.value <= (tdLeftMaxWidth - thumbWidth) * ratio) {
+        tdLeft.style.width = (Number(this.value) / ratio + Number(thumbWidth)) + "px";
       }
     }
   });
@@ -277,12 +278,12 @@ function filterRangeSlider() {
         this.value = valueMin.value;
         tdRight.style.width = (Number(thumbWidth) - Number(tdLeft.offsetWidth)) + "px";
       }
-      if (this.value > widthTable - thumbWidth * 2) {
-        this.value = widthTable - thumbWidth * 2;
+      if (this.value > (tableWidth - thumbWidth * 2) * ratio) {
+        this.value = (tableWidth - thumbWidth * 2) * ratio;
         tdRight.style.width = (Number(thumbWidth) - Number(thumbWidth)) + "px";
       }
-      if (valueMin.value <= this.value <= widthTable - thumbWidth * 2) {
-        tdRight.style.width = (Number(widthTable) - Number(valueMax.value) - Number(thumbWidth)) + "px";
+      if (valueMin.value <= this.value <= (tableWidth - thumbWidth * 2) * ratio) {
+        tdRight.style.width = (Number(tableWidth) - Number(valueMax.value) / ratio - Number(thumbWidth)) + "px";
       }
     }
   });

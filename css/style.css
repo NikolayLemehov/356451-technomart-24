@@ -1594,6 +1594,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-width: 90px;
 }
 
 .filter-range__container_slider {
