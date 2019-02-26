@@ -277,7 +277,7 @@ input[type="radio"].visually-hidden {
   transform: translateX(-100%);
 }
 
-.basket-available-true {
+.widget__link_abailable {
   background-color: rgba(238, 54, 67, 1);
 }
 
