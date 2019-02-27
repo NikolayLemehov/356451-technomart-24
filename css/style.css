@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
 /*header header__middle header__title*/
 .header__title {
   width: 300px;
-  margin: 0 15px 0 0;
+  margin: 0 20px 0 0;
   padding: 3px 25px 0 52px;
 
   color: rgba(238, 54, 67, 1);
@@ -325,6 +325,10 @@ input[type="radio"].visually-hidden {
 }
 
 /*header header__middle header-contacts*/
+.header-contacts {
+  width: 270px;
+}
+
 .header-contacts__link_phone {
   position: relative;
 
@@ -978,12 +982,12 @@ input[type="radio"].visually-hidden {
 
 .popular__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 0 0 -20px;
 }
 
 .popular-item {
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 
 .goods-card {
@@ -1265,13 +1269,14 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 240px;
   min-height: 61px;
-  padding: 14px 20px 10px 22px;
+  padding: 7px 20px 10px 22px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.7px; /*не подходит шрифт*/
+  text-align: left;
   color: rgba(255, 255, 255, 1);
 
   background-color: rgba(50, 66, 92, 1);
