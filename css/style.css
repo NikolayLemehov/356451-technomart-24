@@ -1239,6 +1239,19 @@ input[type="radio"].visually-hidden {
   width: 240px;
 }
 
+.service__list::before {
+  content: '';
+  position: absolute;
+  left: 230px;
+  top: -45px;
+
+  display: block;
+  width: 10px;
+  height: 279px;
+
+  background: url("../img/shadow.png") 0 0 no-repeat;
+}
+
 .service__title {
   margin: 0 0 26px 0;
 
