@@ -279,6 +279,7 @@ function filterRangeSlider() {
   valueMin.addEventListener("keydown", function (evt) {
     var tdLeftMaxWidth = tableWidth - tdRight.offsetWidth;
     if (evt.keyCode === 13 && this.focus) {
+      evt.preventDefault();
       if (this.value < 0) {
         this.value = 0;
         tdLeft.style.width = thumbWidth + "px";
@@ -296,6 +297,7 @@ function filterRangeSlider() {
 
   valueMax.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 13 && this.focus) {
+      evt.preventDefault();
       if (+this.value < +valueMin.value) {
         this.value = valueMin.value;
         tdRight.style.width = (Number(thumbWidth) - Number(tdLeft.offsetWidth)) + "px";

@@ -1669,6 +1669,7 @@ input[type="radio"].visually-hidden {
 
 /*input-range*/
 .range-slider {
+  display: flex;
   width: 100%;
   height: 2px;
   border-collapse: collapse;
@@ -1681,6 +1682,8 @@ input[type="radio"].visually-hidden {
 }
 
 .range-slider__td:nth-child(2n) {
+  flex-grow: 1;
+
   background-color: rgba(0, 202, 116, 1);
 }
 
@@ -1694,6 +1697,10 @@ input[type="radio"].visually-hidden {
 
 .range-slider__td_right {
   width: 30%;
+}
+
+.range-slider__img-wrap {
+  position: relative;
 }
 
 .range-slider__td_left .range-slider__img-wrap {
