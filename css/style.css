@@ -1641,6 +1641,8 @@ input[type="radio"].visually-hidden {
 
 .filter-range__label {
   display: flex;
+
+  font-size: 0;
 }
 
 .filter-range__value {
@@ -1778,6 +1780,10 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-on.svg") 0 0 no-repeat;
 }
 
+.filter-input-checkbox:focus + .checkbox-indicator::before {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .filter__label:hover .filter-input-checkbox:checked + .checkbox-indicator::before {
   width: 27px;
 
@@ -1817,6 +1823,10 @@ input[type="radio"].visually-hidden {
 
 .filter-input-radio:checked + .radio-indicator::before {
   background: url("../img/radio-on.svg") 0 0 no-repeat;
+}
+
+.filter-input-radio:focus + .radio-indicator::before {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .filter__label:hover .filter-input-radio:checked + .radio-indicator::before {
