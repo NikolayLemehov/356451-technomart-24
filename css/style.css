@@ -1370,8 +1370,19 @@ input[type="radio"].visually-hidden {
 }
 
 .service__item2 .service__p {
-  width: 400px;
   margin-bottom: 26px;
+}
+
+.service__p_delivery {
+  width: 278px;
+}
+
+.service__p_warranty {
+  width: 379px;
+}
+
+.service__p_credit {
+  width: 280px;
 }
 
 .service__item {
@@ -1515,7 +1526,11 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.12px; /*не подходит шрифт*/
+  letter-spacing: 0.12px;
+}
+
+.about-us__p_last {
+  width: 410px;
 }
 
 .about-us__item {
@@ -1573,6 +1588,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__p {
+  width: 200px;
   margin: 0 0 31px 0;
 
   font-size: 13px;
@@ -1868,7 +1884,7 @@ input[type="radio"].visually-hidden {
 
   position: relative;
 
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 .filter__label {
@@ -2228,6 +2244,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top__address {
+  width: 340px;
   margin: 28px 0 0 3px;
 
   font-size: 18px;
@@ -2361,10 +2378,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-feedback {
-  margin-right: 52px;
+  width: 150px;
+  margin-right: 38px;
 }
 
 .footer-developed-by {
+  width: 98px;
   margin-right: 14px;
 }
 
