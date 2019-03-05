@@ -440,7 +440,7 @@ input[type="radio"].visually-hidden {
 .user-navigation-out__link-login {
   position: relative;
 
-  width: 121px; /*временно*/
+  width: 121px;
   padding: 12px 20px 15px 47px;
 }
 
