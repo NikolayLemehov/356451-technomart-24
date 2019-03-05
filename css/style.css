@@ -419,7 +419,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-out__link {
   display: block;
-  height: 45px; /*временно*/
+  min-height: 45px;
 
   font-size: 21px;
   font-weight: 400;
