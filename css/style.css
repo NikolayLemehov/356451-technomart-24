@@ -1370,8 +1370,19 @@ input[type="radio"].visually-hidden {
 }
 
 .service__item2 .service__p {
-  width: 400px;
   margin-bottom: 26px;
+}
+
+.service__p_delivery {
+  width: 278px;
+}
+
+.service__p_warranty {
+  width: 379px;
+}
+
+.service__p_credit {
+  width: 280px;
 }
 
 .service__item {
@@ -1518,6 +1529,10 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.12px; /*не подходит шрифт*/
 }
 
+.about-us__p_last {
+  width: 410px;
+}
+
 .about-us__item {
   position: relative;
 
@@ -1573,6 +1588,7 @@ input[type="radio"].visually-hidden {
 }
 
 .contacts__p {
+  width: 200px;
   margin: 0 0 31px 0;
 
   font-size: 13px;
