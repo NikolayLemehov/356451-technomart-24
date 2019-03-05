@@ -466,7 +466,7 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation-out__link-registration {
-  width: 150px; /*временно*/
+  width: 150px;
   padding: 12px 25px 12px 24px;
 }
 
