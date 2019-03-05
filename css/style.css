@@ -1861,12 +1861,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filter__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
   position: relative;
 
   margin: 0 0 16px 0;
   padding: 0;
 }
-
 .filter__label {
   position: relative;
 
