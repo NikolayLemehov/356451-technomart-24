@@ -893,11 +893,18 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__item.visible {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .promo-slider__item {
   position: relative;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 
   width: 100%;
   height: 266px;
@@ -915,7 +922,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__title {
-  margin: 0 0 3px 0;
+  margin: 1px 0 2px 0;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -927,7 +934,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-slider__slogan {
-  margin: 0 0 122px 0; /*временно*/
+  margin: 0 0 20px 0;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -938,6 +945,7 @@ input[type="radio"].visually-hidden {
 
 .promo-slider__link {
   width: 195px;
+  margin-top: auto;
   padding: 10px 25px;
 
   text-align: center;
@@ -949,9 +957,7 @@ input[type="radio"].visually-hidden {
   bottom: 36px;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
 
   overflow: hidden;
