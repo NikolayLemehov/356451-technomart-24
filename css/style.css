@@ -1883,7 +1883,7 @@ input[type="radio"].visually-hidden {
 
   position: relative;
 
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 .filter__label {
@@ -2243,6 +2243,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-top__address {
+  width: 340px;
   margin: 28px 0 0 3px;
 
   font-size: 18px;
@@ -2376,10 +2377,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-feedback {
-  margin-right: 52px;
+  width: 150px;
+  margin-right: 38px;
 }
 
 .footer-developed-by {
+  width: 98px;
   margin-right: 14px;
 }
 
