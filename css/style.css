@@ -1434,11 +1434,48 @@ input[type="radio"].visually-hidden {
 }
 
 .service__item2 {
-  display: none;
-  min-height: calc(261px + 23px);
+  position: relative;
 
-  background: url("../img/delivery-service.png") 99% 23px no-repeat;
-  background-size: 468px 261px;
+  display: none;
+}
+
+.service__item2_delivery::after {
+  content: '';
+  position: absolute;
+  right: 2px;
+  top: 23px;
+
+  display: block;
+  width: 468px;
+  height: 261px;
+
+  background: url("../img/delivery-service.png") 0 0 no-repeat;
+}
+
+.service__item2_warranty::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 1px;
+
+  display: block;
+  width: 389px;
+  height: 283px;
+
+  background: url("../img/guarantee-service.png") 0 0 no-repeat;
+}
+
+.service__item2_credit::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: -1px;
+
+  display: block;
+  width: 465px;
+  height: 285px;
+
+  background: url("../img/credit-service.png") 0 0 no-repeat;
 }
 
 .service__item2_active {
@@ -1449,7 +1486,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service__h3 {
-  margin: -2px 0 25px 0;
+  margin: -2px 0 25px 1px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
