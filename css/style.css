@@ -1324,7 +1324,7 @@ input[type="radio"].visually-hidden {
 /*services*/
 .service {
   min-height: 522px;
-  padding: 65px 0 100px;
+  padding: 65px 0 0;
 
   background-color: rgba(244, 248, 249, 1);
 }
@@ -1332,6 +1332,11 @@ input[type="radio"].visually-hidden {
 .service__header {
   width: 400px;
 }
+
+.service__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;}
 
 .service__list {
   position: relative;
@@ -1374,6 +1379,7 @@ input[type="radio"].visually-hidden {
 }
 
 .service__p_delivery {
+  margin: 0;
   width: 278px;
 }
 
@@ -1421,26 +1427,29 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 1), inset 0 1px 0 rgba(255, 255, 255, 1);
 }
 
-.service__list2 {
-  display: none;
+.service__list_description {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  margin-left: 79px;
 }
 
-.service__item_active .service__list2 {
-  position: absolute;
-  top: -2px;
-  right: -80px;
+.service__item2 {
+  display: none;
+  min-height: calc(261px + 23px);
 
-  display: block;
-  width: 620px;
-  height: 288px;
+  background: url("../img/delivery-service.png") 99% 23px no-repeat;
+  background-size: 468px 261px;
+}
 
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%);
+.service__item2_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
 .service__h3 {
-  margin: 0 0 25px 0;
+  margin: -2px 0 25px 0;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
@@ -1463,12 +1472,6 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 1);
 }
 
-.service__img {
-  position: absolute;
-  bottom: 2px;
-  right: 1px;
-}
-
 .service__item:nth-child(2) .service__img {
   right: -8px;
 }
@@ -1479,7 +1482,7 @@ input[type="radio"].visually-hidden {
 
 /*double-section*/
 .double-section {
-  padding: 77px 0 86px 0;
+  padding: 79px 0 86px 0;
 }
 
 .double-section > .container {
