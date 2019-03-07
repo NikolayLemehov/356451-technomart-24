@@ -808,11 +808,9 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item__link {
-  position: absolute;
-  bottom: 22px;
-  left: 25px;
-
   display: block;
+  margin-left: 24px;
+  margin-top: 13px;
   width: 135px;
   height: 38px;
 
@@ -1375,6 +1373,9 @@ input[type="radio"].visually-hidden {
 }
 
 .service__item2 .service__p {
+  position: relative;
+  z-index: 10;
+
   margin-bottom: 26px;
 }
 
@@ -1499,6 +1500,7 @@ input[type="radio"].visually-hidden {
 .service__link-credit {
   width: 195px;
   min-height: 38px;
+  margin-bottom: 40px;
   padding: 11px 20px 7px 45px;
 
   font-family: "Cuprum", Arial, sans-serif;
