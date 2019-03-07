@@ -66,7 +66,7 @@ function writeUs() {
 }
 
 function map() {
-  var openMap = document.querySelector(".contacts__img");
+  var openMap = document.querySelector(".contacts__link_map");
   var popup = document.querySelector(".modal-map");
   var closePopupButton = popup.querySelector(".btn-modal-close");
 
