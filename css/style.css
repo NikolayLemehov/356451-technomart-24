@@ -68,6 +68,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 /*header*/
 .header {
   font-family: "Cuprum", Arial, sans-serif;
