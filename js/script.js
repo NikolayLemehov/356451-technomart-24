@@ -122,19 +122,24 @@ function goodsCardBasket() {
 }
 
 function service() {
-  var serviceItemList = document.querySelectorAll(".service__item");
+  var serviceItemButton = document.querySelectorAll(".service__item");
+  var serviceItemDescription = document.querySelectorAll(".service__item2");
+  var addButtonHandler = function (button, description) {
+    button.addEventListener("click", function () {
+      var buttonActive = document.querySelector(".service__item_active");
+      var descriptionActive = document.querySelector(".service__item2_active");
 
-  for (var i = 0; i < serviceItemList.length; i++) {
-    var serviceItem = serviceItemList[i];
+      buttonActive.classList.remove("service__item_active");
+      button.classList.add("service__item_active");
+      descriptionActive.classList.remove("service__item2_active");
+      description.classList.add("service__item2_active");
+    });
+  };
 
-    serviceItem.addEventListener("click", function (evt) {
-      var serviceItemActive = document.querySelector(".service__item_active");
-
-      evt.preventDefault();
-      serviceItemActive.classList.remove("service__item_active");
-      this.classList.add("service__item_active");
-    })
+  for (var i = 0; i < serviceItemButton.length; i++) {
+    addButtonHandler(serviceItemButton[i], serviceItemDescription[i]);
   }
+
 }
 
 function slider() {
