@@ -108,50 +108,52 @@
   <section class="promo">
     <h2 class="visually-hidden">Всё, что мы можем предложить для Вас.</h2>
     <div class="container">
-      <div class="promo-item item-new" data-promo="material">
-        <h3 class="promo-item__title">Материалы </h3>
-        <a class="btn promo-btn promo-item__link" href="#">на любой вкус</a>
-      </div>
-      <div class="promo-item" data-promo="tool">
-        <h3 class="promo-item__title">Инструмент </h3>
-        <a class="btn promo-btn promo-item__link" href="#">на все случаи</a>
-      </div>
-      <div class="promo-item" data-promo="equipment">
-        <h3 class="promo-item__title">Техника </h3>
-        <a class="btn promo-btn promo-item__link" href="#">для стройки</a>
-      </div>
-      <div class="promo-slider container-slider">
-        <button class="promo-slider__prev"></button>
-        <button class="promo-slider__next"></button>
-        <ul class="list promo-slider__carousel">
-          <li class="promo-slider__item">
-            <h3 class="promo-slider__title">Перфораторы </h3>
-            <p class="promo-slider__slogan">Настоящие мужские игрушки</p>
-            <a class="btn btn-default promo-slider__link" href="catalog.html">открыть каталог</a>
-          </li>
-          <li class="promo-slider__item visible">
-            <h3 class="promo-slider__title">Дрели </h3>
-            <p class="promo-slider__slogan">Соседям на радость!</p>
-            <a class="btn btn-default promo-slider__link" href="catalog.html">открыть каталог</a>
-          </li>
-        </ul>
-        <ul class="list promo-slider__dot-list">
-          <li class="promo-slider__dot-item">
-            <button class="promo-slider__dot-btn"></button>
-          </li>
-          <li class="promo-slider__dot-item">
-            <button class="promo-slider__dot-btn promo-slider__dot-btn_active"></button>
-          </li>
-        </ul>
-      </div>
-      <div class="wrap-promo">
-        <div class="promo-item" data-promo="discount">
-          <h3 class="promo-item__title">Скидки 50% </h3>
-          <a class="btn promo-btn promo-item__link" href="#">на 350 товаров</a>
+      <div class="promo-wrap">
+        <div class="promo-item promo-positioner item-new" data-promo="material">
+          <h3 class="promo-item__title">Материалы </h3>
+          <a class="btn promo-btn promo-item__link" href="#">на любой вкус</a>
         </div>
-        <div class="promo-item" data-promo="delivery">
-          <h3 class="promo-item__title">Доставка </h3>
-          <a class="btn promo-btn promo-item__link" href="#">бесплатно</a>
+        <div class="promo-item promo-positioner" data-promo="tool">
+          <h3 class="promo-item__title">Инструмент </h3>
+          <a class="btn promo-btn promo-item__link" href="#">на все случаи</a>
+        </div>
+        <div class="promo-item promo-positioner" data-promo="equipment">
+          <h3 class="promo-item__title">Техника </h3>
+          <a class="btn promo-btn promo-item__link" href="#">для стройки</a>
+        </div>
+        <div class="promo-slider container-slider promo-positioner">
+          <button class="promo-slider__prev"></button>
+          <button class="promo-slider__next"></button>
+          <ul class="list promo-slider__carousel">
+            <li class="promo-slider__item">
+              <h3 class="promo-slider__title">Перфораторы </h3>
+              <p class="promo-slider__slogan">Настоящие мужские игрушки</p>
+              <a class="btn btn-default promo-slider__link" href="catalog.html">открыть каталог</a>
+            </li>
+            <li class="promo-slider__item visible">
+              <h3 class="promo-slider__title">Дрели </h3>
+              <p class="promo-slider__slogan">Соседям на радость!</p>
+              <a class="btn btn-default promo-slider__link" href="catalog.html">открыть каталог</a>
+            </li>
+          </ul>
+          <ul class="list promo-slider__dot-list">
+            <li class="promo-slider__dot-item">
+              <button class="promo-slider__dot-btn"></button>
+            </li>
+            <li class="promo-slider__dot-item">
+              <button class="promo-slider__dot-btn promo-slider__dot-btn_active"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="wrap-promo-item-group">
+          <div class="promo-item promo-positioner" data-promo="discount">
+            <h3 class="promo-item__title">Скидки 50% </h3>
+            <a class="btn promo-btn promo-item__link" href="#">на 350 товаров</a>
+          </div>
+          <div class="promo-item promo-positioner" data-promo="delivery">
+            <h3 class="promo-item__title">Доставка </h3>
+            <a class="btn promo-btn promo-item__link" href="#">бесплатно</a>
+          </div>
         </div>
       </div>
     </div>
