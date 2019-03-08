@@ -800,7 +800,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item__title {
-  width: 170px;
+  width: 190px;
   margin: 0;
   padding-top: 21px;
   padding-left: 23px;
@@ -810,6 +810,13 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 1);
+}
+
+.wrap-promo-item-group .promo-item__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  overflow: hidden;
 }
 
 .promo-item__link {
