@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,700&amp;subset=cyrillic"
         rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
@@ -238,15 +238,17 @@
       <section class="filter-items">
         <div class="top-filter">
           <h2 class="top-filter__h2">сортировка:</h2>
-          <button class="top-filter__btn top-filter__btn_type top-filter__btn_type_current">
-            <span class="content">по цене</span>
-          </button>
-          <button class="top-filter__btn top-filter__btn_type">
-            <span class="content">по типу</span>
-          </button>
-          <button class="top-filter__btn top-filter__btn_type">
-            <span class="content">по функционалу</span>
-          </button>
+          <div class="top-filter__group-parameter">
+            <button class="top-filter__btn top-filter__btn_type top-filter__btn_type_current">
+              <span class="content">по цене</span>
+            </button>
+            <button class="top-filter__btn top-filter__btn_type">
+              <span class="content">по типу</span>
+            </button>
+            <button class="top-filter__btn top-filter__btn_type">
+              <span class="content">по функционалу</span>
+            </button>
+          </div>
           <button
             class="top-filter__btn top-filter__btn_direction top-filter__btn_direction_up top-filter__btn_direction_current">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
