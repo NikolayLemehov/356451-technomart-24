@@ -300,6 +300,21 @@ function filterRangeSlider() {
     }
   });
 
+  valueMin.addEventListener("blur", function () {
+    var tdLeftMaxWidth = tableWidth - tdRight.offsetWidth;
+    if (this.value < 0) {
+      this.value = 0;
+      tdLeft.style.width = thumbWidth + "px";
+    }
+    if (this.value > (tdLeftMaxWidth - thumbWidth) * ratio) {
+      this.value = (tdLeftMaxWidth - thumbWidth) * ratio;
+      tdLeft.style.width = tdLeftMaxWidth + "px";
+    }
+    if (0 <= this.value <= (tdLeftMaxWidth - thumbWidth) * ratio) {
+      tdLeft.style.width = (Number(this.value) / ratio + Number(thumbWidth)) + "px";
+    }
+  });
+
   valueMax.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 13 && this.focus) {
       evt.preventDefault();
@@ -315,6 +330,20 @@ function filterRangeSlider() {
         tdRight.style.width = (Number(tableWidth) - Number(valueMax.value) / ratio - Number(thumbWidth)) + "px";
       }
       this.select();
+    }
+  });
+
+  valueMax.addEventListener("blur", function () {
+    if (+this.value < +valueMin.value) {
+      this.value = valueMin.value;
+      tdRight.style.width = (Number(thumbWidth) - Number(tdLeft.offsetWidth)) + "px";
+    }
+    if (this.value > (tableWidth - thumbWidth * 2) * ratio) {
+      this.value = (tableWidth - thumbWidth * 2) * ratio;
+      tdRight.style.width = (Number(thumbWidth) - Number(thumbWidth)) + "px";
+    }
+    if (valueMin.value <= this.value <= (tableWidth - thumbWidth * 2) * ratio) {
+      tdRight.style.width = (Number(tableWidth) - Number(valueMax.value) / ratio - Number(thumbWidth)) + "px";
     }
   });
 
