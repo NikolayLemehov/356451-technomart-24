@@ -1,5 +1,3 @@
-var currentLocation = window.location;
-
 function writeUs() {
   var openPopupButton = document.querySelector(".about-us__btn");
   var popup = document.querySelector(".modal.write-us");
@@ -143,10 +141,11 @@ function service() {
 }
 
 function slider() {
-  var prevButton = document.querySelector(".promo-slider__prev");
-  var nextButton = document.querySelector(".promo-slider__next");
-  var sliderDotList = document.querySelectorAll(".promo-slider__dot-btn");
-  var sliderList = document.querySelectorAll(".promo-slider__item");
+  var slider = document.querySelector(".promo-slider");
+  var prevButton = slider.querySelector(".promo-slider__prev");
+  var nextButton = slider.querySelector(".promo-slider__next");
+  var sliderDotList = slider.querySelectorAll(".promo-slider__dot-btn");
+  var sliderList = slider.querySelectorAll(".promo-slider__item");
   var addDotClickHandler = function (dot, slider) {
     dot.addEventListener("click", function () {
       var sliderDotActive = document.querySelector(".promo-slider__dot-btn_active");
@@ -205,7 +204,7 @@ function slider() {
 
 function filterRangeSlider() {
   var filterRange = document.querySelector(".filter-range");
-  var rangeSlider = document.querySelector(".range-slider");
+  var rangeSlider = filterRange.querySelector(".range-slider");
   var tdLeft = rangeSlider.querySelector(".range-slider__td_left");
   var tdRight = rangeSlider.querySelector(".range-slider__td_right");
   var thumbLeft = rangeSlider.querySelector(".range-slider__thumb_left");
@@ -354,17 +353,26 @@ function filterRangeSlider() {
   init();
 }
 
-if (currentLocation.pathname.lastIndexOf("/index.html") >= 0) {
+if (document.querySelector(".about-us__btn") !== null && document.querySelector(".modal.write-us") !== null) {
   writeUs();
+}
+
+if (document.querySelector(".contacts__link_map") !== null && document.querySelector(".modal-map") !== null) {
   map();
+}
+
+if (document.querySelector(".goods-card__link_buy") !== null && document.querySelector(".modal-add-basket") !== null) {
   goodsCardBasket();
+}
+
+if (document.querySelector(".service__item") !== null && document.querySelector(".service__item2") !== null) {
   service();
+}
+
+if (document.querySelector(".promo-slider") !== null) {
   slider();
 }
 
-if (currentLocation.pathname.lastIndexOf("/catalog.html") >= 0) {
-  goodsCardBasket();
+if (document.querySelector(".filter-range") !== null) {
   filterRangeSlider();
 }
-
-
